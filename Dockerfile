@@ -7,6 +7,7 @@ RUN set -ex;                                         \
   ln -snf /usr/share/zoneinfo/$TZ /etc/localtime;    \
   apt-get update;                                    \
   apt-get install --no-install-recommends -y         \
+    ca-certificates                                  \
     curl                                             \
     iproute2                                         \
     iputils-ping                                     \
@@ -17,6 +18,7 @@ RUN set -ex;                                         \
     parallel                                         \
     pid1                                             \
     tcpdump                                          \
+    wget                                             \
   ;                                                  \
   rm -rf /var/lib/apt/lists/*;
 
