@@ -18,6 +18,7 @@ RUN set -ex;                                         \
     parallel                                         \
     pid1                                             \
     tcpdump                                          \
+    telnet                                           \
     wget                                             \
   ;                                                  \
   rm -rf /var/lib/apt/lists/*;
