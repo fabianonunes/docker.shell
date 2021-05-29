@@ -18,6 +18,7 @@ RUN set -ex;                                         \
   ln -snf /usr/share/zoneinfo/$TZ /etc/localtime;    \
   apt-get update;                                    \
   apt-get install --no-install-recommends -y         \
+    apache2-utils                                    \
     ca-certificates                                  \
     curl                                             \
     iproute2                                         \
