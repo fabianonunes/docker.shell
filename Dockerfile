@@ -21,9 +21,9 @@ RUN set -ex;                                         \
     apache2-utils                                    \
     ca-certificates                                  \
     curl                                             \
+    dnsutils                                         \
     iproute2                                         \
     iputils-ping                                     \
-    dnsutils                                         \
     nano                                             \
     net-tools                                        \
     netcat-openbsd                                   \
