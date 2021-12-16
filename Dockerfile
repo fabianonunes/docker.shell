@@ -30,6 +30,7 @@ RUN set -ex;                                         \
     netcat-openbsd                                   \
     parallel                                         \
     pid1                                             \
+    sysstat                                          \
     tcpdump                                          \
     telnet                                           \
     wget                                             \
