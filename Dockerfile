@@ -1,14 +1,3 @@
-FROM golang:stretch as hey
-
-WORKDIR /app
-
-RUN set -ex;                                                                \
-    git clone --branch v0.1.4 --depth 1 https://github.com/rakyll/hey.git;  \
-    cd hey;                                                                 \
-    make release
-
-RUN ls -la /app
-
 FROM ubuntu:20.04
 
 ENV LANG C.UTF-8
@@ -22,6 +11,7 @@ RUN set -ex;                                         \
     ca-certificates                                  \
     curl                                             \
     dnsutils                                         \
+    hey                                              \
     iproute2                                         \
     iputils-ping                                     \
     jq                                               \
@@ -36,8 +26,6 @@ RUN set -ex;                                         \
     wget                                             \
   ;                                                  \
   rm -rf /var/lib/apt/lists/*;
-
-COPY --from=hey /app/hey/bin/hey_linux_amd64 /usr/bin/hey
 
 ENTRYPOINT [ "pid1", "--" ]
 CMD [ "tail", "-f", "/dev/null" ]
