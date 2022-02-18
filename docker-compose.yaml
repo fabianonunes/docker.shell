@@ -1,7 +1,7 @@
 version: '3'
 services:
   base:
-    image: fabianonunes/shell:0.0.4
+    image: fabianonunes/shell:0.0.5
     build:
       context: .
   shell:
