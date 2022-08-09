@@ -1,12 +1,12 @@
 version: '3'
 services:
   base:
-    image: fabianonunes/shell:0.0.5
+    image: fabianonunes/shell:0.0.6
     build:
       context: .
   shell:
     image: ubuntu:18.04
     command:
-      - tail
-      - -f
-      - /dev/null
+    - tail
+    - -f
+    - /dev/null

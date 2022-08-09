@@ -8,10 +8,12 @@ RUN set -ex;                                         \
   apt-get update;                                    \
   apt-get install --no-install-recommends -y         \
     apache2-utils                                    \
+    busybox                                          \
     ca-certificates                                  \
     curl                                             \
     dnsutils                                         \
     hey                                              \
+    iperf3                                           \
     iproute2                                         \
     iputils-ping                                     \
     jq                                               \
