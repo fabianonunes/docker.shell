@@ -22,6 +22,7 @@ RUN set -ex;                                         \
     netcat-openbsd                                   \
     parallel                                         \
     pid1                                             \
+    socat                                            \
     sysstat                                          \
     tcpdump                                          \
     telnet                                           \
