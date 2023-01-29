@@ -23,7 +23,8 @@ RUN set -ex;                                         \
     tcpdump                                          \
     wget                                             \
   ;                                                  \
-  rm -rf /var/lib/apt/lists/*;
+  rm -rf /var/lib/apt/lists/*;                       \
+  busybox --install
 
 ENTRYPOINT [ "pid1", "--" ]
 CMD [ "tail", "-f", "/dev/null" ]
