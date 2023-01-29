@@ -14,18 +14,13 @@ RUN set -ex;                                         \
     dnsutils                                         \
     hey                                              \
     iperf3                                           \
-    iproute2                                         \
-    iputils-ping                                     \
     jq                                               \
     nano                                             \
-    net-tools                                        \
-    netcat-openbsd                                   \
     parallel                                         \
     pid1                                             \
     socat                                            \
     sysstat                                          \
     tcpdump                                          \
-    telnet                                           \
     wget                                             \
   ;                                                  \
   rm -rf /var/lib/apt/lists/*;
