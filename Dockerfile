@@ -19,6 +19,7 @@ RUN set -ex;                                         \
     parallel                                         \
     pid1                                             \
     socat                                            \
+    strace                                           \
     sysstat                                          \
     tcpdump                                          \
     wget                                             \
