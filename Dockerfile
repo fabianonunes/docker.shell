@@ -20,6 +20,7 @@ RUN set -ex;                                         \
     pid1                                             \
     socat                                            \
     strace                                           \
+    sysbench                                         \
     sysstat                                          \
     tcpdump                                          \
     wget                                             \
