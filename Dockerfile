@@ -24,6 +24,7 @@ RUN set -ex;                                         \
     sysbench                                         \
     sysstat                                          \
     tcpdump                                          \
+    wait-for-it                                      \
     wget                                             \
   ;                                                  \
   rm -rf /var/lib/apt/lists/*;                       \
