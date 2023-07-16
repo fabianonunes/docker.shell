@@ -15,6 +15,7 @@ RUN set -ex;                                         \
     gpg                                              \
     hey                                              \
     iperf3                                           \
+    iproute2                                         \
     jq                                               \
     nano                                             \
     parallel                                         \
