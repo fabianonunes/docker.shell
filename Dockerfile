@@ -25,6 +25,7 @@ RUN set -ex;                                         \
     sysbench                                         \
     sysstat                                          \
     tcpdump                                          \
+    vmtouch                                          \
     wait-for-it                                      \
     wget                                             \
   ;                                                  \
