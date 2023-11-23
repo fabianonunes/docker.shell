@@ -12,6 +12,7 @@ RUN set -ex;                                         \
     ca-certificates                                  \
     curl                                             \
     dnsutils                                         \
+    fio                                              \
     gpg                                              \
     hey                                              \
     iperf3                                           \
