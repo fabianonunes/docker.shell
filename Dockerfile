@@ -20,6 +20,7 @@ RUN set -ex;                                         \
     nano                                             \
     parallel                                         \
     pid1                                             \
+    pv                                               \
     socat                                            \
     strace                                           \
     sysbench                                         \
