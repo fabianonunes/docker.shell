@@ -22,6 +22,7 @@ RUN set -ex;                                         \
     nano                                             \
     parallel                                         \
     pid1                                             \
+    psmisc                                           \
     pv                                               \
     socat                                            \
     strace                                           \
