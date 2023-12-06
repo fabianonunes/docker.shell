@@ -15,6 +15,7 @@ RUN set -ex;                                         \
     fio                                              \
     gpg                                              \
     hey                                              \
+    htop                                             \
     iperf3                                           \
     iproute2                                         \
     jq                                               \
