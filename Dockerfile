@@ -36,5 +36,6 @@ RUN set -ex;                                         \
   rm -rf /var/lib/apt/lists/*;                       \
   busybox --install
 
-ENTRYPOINT [ "pid1", "--" ]
-CMD [ "tail", "-f", "/dev/null" ]
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+
+ENTRYPOINT [ "entrypoint.sh" ]
