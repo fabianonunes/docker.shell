@@ -30,6 +30,7 @@ RUN <<EOT
     pv                                        \
     socat                                     \
     strace                                    \
+    sudo                                      \
     sysbench                                  \
     sysstat                                   \
     tcpdump                                   \
@@ -37,6 +38,7 @@ RUN <<EOT
     wait-for-it                               \
     wget                                      \
   ;
+  echo "ALL ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
   busybox --install
   rm -rf /var/lib/apt/lists/*;
 EOT
