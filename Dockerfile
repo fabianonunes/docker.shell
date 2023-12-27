@@ -1,3 +1,6 @@
+FROM golang:latest as builder
+RUN go install github.com/go-delve/delve/cmd/dlv@latest
+
 FROM ubuntu:22.04
 
 ENV LANG C.UTF-8
@@ -35,6 +38,8 @@ RUN set -ex;                                         \
   ;                                                  \
   rm -rf /var/lib/apt/lists/*;                       \
   busybox --install
+
+COPY --from=builder /go/bin/dlv /usr/local/bin/dlv
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
