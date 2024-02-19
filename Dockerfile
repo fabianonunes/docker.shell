@@ -24,6 +24,7 @@ RUN <<EOT
     iproute2                                  \
     jq                                        \
     nano                                      \
+    netcat-openbsd                            \
     parallel                                  \
     pid1                                      \
     psmisc                                    \
