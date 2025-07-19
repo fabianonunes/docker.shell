@@ -2,7 +2,7 @@
 FROM golang:latest as builder
 RUN go install github.com/go-delve/delve/cmd/dlv@latest
 
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 SHELL ["/bin/bash", "-exc"]
 ENV LANG C.UTF-8
 
