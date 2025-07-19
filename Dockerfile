@@ -48,8 +48,6 @@ RUN <<EOT
   rm -rf /var/lib/apt/lists/*;
 EOT
 
-RUN adduser --system --uid 1000 --group --no-create-home runner;
-
 COPY --from=builder /go/bin/ /usr/local/bin/
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
