@@ -1,4 +1,3 @@
-version: '3'
 services:
   base:
     image: fabianonunes/shell:0.0.11
