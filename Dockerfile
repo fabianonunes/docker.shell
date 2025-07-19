@@ -1,6 +1,7 @@
 # syntax=docker/dockerfile:1.4
 FROM golang:latest as builder
 RUN go install github.com/go-delve/delve/cmd/dlv@latest
+RUN go install github.com/codesenberg/bombardier@latest
 
 FROM ubuntu:24.04
 SHELL ["/bin/bash", "-exc"]
@@ -49,7 +50,7 @@ EOT
 
 RUN adduser --system --uid 1000 --group --no-create-home runner;
 
-COPY --from=builder /go/bin/dlv /usr/local/bin/dlv
+COPY --from=builder /go/bin/ /usr/local/bin/
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
 ENTRYPOINT [ "entrypoint.sh" ]
