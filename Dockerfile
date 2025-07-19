@@ -19,11 +19,13 @@ RUN <<EOT
     fio                                       \
     gpg                                       \
     hey                                       \
+    hping3                                    \
     htop                                      \
     iperf3                                    \
     iproute2                                  \
     jq                                        \
     nano                                      \
+    net-tools                                 \
     netcat-openbsd                            \
     parallel                                  \
     pid1                                      \
@@ -38,6 +40,7 @@ RUN <<EOT
     vmtouch                                   \
     wait-for-it                               \
     wget                                      \
+    wrk                                       \
   ;
   echo "ALL ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
   busybox --install
