@@ -1,11 +1,5 @@
 services:
   base:
-    image: fabianonunes/shell:0.0.11
+    image: fabianonunes/docker.shell:latest
     build:
       context: .
-  shell:
-    image: ubuntu:18.04
-    command:
-    - tail
-    - -f
-    - /dev/null
