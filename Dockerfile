@@ -2,6 +2,7 @@
 FROM golang:latest as builder
 RUN go install github.com/go-delve/delve/cmd/dlv@latest
 RUN go install github.com/codesenberg/bombardier@latest
+RUN go install github.com/gcla/termshark/v2/cmd/termshark@v2.4.0
 
 FROM ubuntu:24.04
 SHELL ["/bin/bash", "-exc"]
@@ -13,19 +14,31 @@ RUN <<EOT
   apt-get update;
   apt-get install --no-install-recommends -y  \
     apache2-utils                             \
+    bridge-utils                              \
     busybox                                   \
     ca-certificates                           \
     curl                                      \
+    dhcping                                   \
+    ethtool                                   \
     gpg                                       \
     hey                                       \
     hping3                                    \
     htop                                      \
+    iftop                                     \
     iperf3                                    \
     iproute2                                  \
+    iptables                                  \
+    iptraf-ng                                 \
+    iputils-arping                            \
+    ipvsadm                                   \
     jq                                        \
+    knot-dnsutils                             \
+    ldnsutils                                 \
     nano                                      \
     net-tools                                 \
     netcat-openbsd                            \
+    nftables                                  \
+    ngrep                                     \
     pid1                                      \
     psmisc                                    \
     pv                                        \
@@ -35,6 +48,8 @@ RUN <<EOT
     sysbench                                  \
     sysstat                                   \
     tcpdump                                   \
+    tcptraceroute                             \
+    tshark                                    \
     vmtouch                                   \
     wait-for-it                               \
     wget                                      \
