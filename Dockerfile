@@ -16,8 +16,6 @@ RUN <<EOT
     busybox                                   \
     ca-certificates                           \
     curl                                      \
-    dnsutils                                  \
-    fio                                       \
     gpg                                       \
     hey                                       \
     hping3                                    \
@@ -28,7 +26,6 @@ RUN <<EOT
     nano                                      \
     net-tools                                 \
     netcat-openbsd                            \
-    parallel                                  \
     pid1                                      \
     psmisc                                    \
     pv                                        \
