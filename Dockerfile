@@ -37,6 +37,7 @@ RUN <<EOT
     nano                                      \
     net-tools                                 \
     netcat-openbsd                            \
+    netperf                                   \
     nftables                                  \
     ngrep                                     \
     pid1                                      \
