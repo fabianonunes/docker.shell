@@ -17,6 +17,7 @@ RUN <<EOT
     bridge-utils                              \
     busybox                                   \
     ca-certificates                           \
+    conntrack                                 \
     curl                                      \
     dhcping                                   \
     ethtool                                   \
