@@ -44,6 +44,9 @@ RUN <<EOT
     pid1                                      \
     psmisc                                    \
     pv                                        \
+    rclone                                    \
+    restic                                    \
+    rsync                                     \
     socat                                     \
     strace                                    \
     sudo                                      \
