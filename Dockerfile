@@ -21,6 +21,7 @@ RUN <<EOT
     curl                                      \
     dhcping                                   \
     ethtool                                   \
+    gnutls-bin                                \
     gpg                                       \
     hey                                       \
     hping3                                    \
