@@ -1,21 +1,14 @@
 variables:
   IMAGE_TAG: ${CI_COMMIT_TAG}
+  IMAGE_OUTPUT_TYPE: registry
   # IMAGE_REPOSITORY está definida nas variáveis de CI/CD no GitLab
 
 stages:
 - build
-- release
 
 build:
   stage: build
   only:
   - tags
   script:
-  - docker compose build --force-rm
-
-publish:
-  stage: release
-  only:
-  - tags
-  script:
-  - docker compose push
+  - docker buildx bake

@@ -3,3 +3,8 @@ services:
     image: ${IMAGE_REPOSITORY:-localhost/shell}:${IMAGE_TAG:-latest}
     build:
       context: .
+      x-bake:
+        output: type=${IMAGE_OUTPUT_TYPE:-docker}
+        tags:
+        - ${IMAGE_REPOSITORY:-localhost/shell}:${IMAGE_TAG:-latest}
+        - ${IMAGE_REPOSITORY:-localhost/shell}:latest
