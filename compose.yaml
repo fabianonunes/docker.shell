@@ -1,5 +1,5 @@
 services:
   base:
-    image: fabianonunes/docker.shell:latest
+    image: ${IMAGE_REPOSITORY:-localhost/shell}:${IMAGE_TAG:-latest}
     build:
       context: .
