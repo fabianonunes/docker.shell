@@ -70,4 +70,5 @@ COPY --from=builder /go/bin/ /usr/local/bin/
 COPY --from=ghcr.io/astral-sh/uv:0.9.11 /uv /uvx /usr/local/bin/
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
-ENTRYPOINT [ "entrypoint.sh" ]
+ENTRYPOINT [ "pid1" ]
+CMD [ "sleep", "infinity" ]
